@@ -1,0 +1,48 @@
+.bottom {
+  height: 260px;
+  background-color: #F7F9FB;
+  width: 100%;
+}
+
+.bottom__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.bottom__content__button {
+  height: 52px;
+  margin: 12px 20px 0px 20px;
+  text-align: center;
+}
+
+.bottom__content__button__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+button {
+  background-color: #ffffff;
+  border: 1px solid #e7eaf0;
+  padding: 16px 0px 16px 20px;
+  width: 100%;
+  border-radius: 12px;
+  font-family: "Poppins";
+  color: #333333;
+  font-weight: 500;
+  height: 52px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=Bottom.module.css.map */

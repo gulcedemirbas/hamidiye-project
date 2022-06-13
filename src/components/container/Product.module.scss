@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+  &__list {
+    position: relative;
+    &__item {
+      background-color: #ffffff;
+      width: 155px;
+      font-size: 12px;
+      font-weight: 500;
+      color: $textColor;
+      padding: 55px 0px 23px 12px;
+      border-radius: $radiusBox;
+      margin-top: 128px;
+      height: 114px;
+    }
+
+    &__image {
+      position: absolute;
+      left: 44px;
+      top: 25px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3px;
+    color: $primary;
+    gap: 20px;
+    align-items: center;
+  }
+  &__amount {
+    color: #333333;
+    width: 100%;
+    font-size: 16px;
+    opacity: 80%;
+    font-weight: 500;
+  }
+}

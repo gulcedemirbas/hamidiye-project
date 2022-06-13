@@ -1,0 +1,67 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  width: 100%;
+  height: $footerHeight;
+  position: fixed;
+  bottom: 0;
+  background-color: $bg;
+  box-shadow: 0px -4px 23px rgba(0, 99, 123, 0.14);
+  border-radius: $radius;
+  color: $textColor;
+  font-weight: 500;
+  @include breakpoint(md) {
+    padding: 0 2rem;
+  }
+  transition: 0.3s ease all;
+
+  &__content {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    &__menu {
+      width: 52px;
+      height: 52px;
+      background-color: $primary;
+      border-radius: $radiusBox;
+      margin-top: 16px;
+      margin-left: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__cart {
+      width: 100%;
+      height: 52px;
+      background-color: $primary;
+      border-radius: $radiusBox;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 20px;
+      margin-right: 20px;
+      margin-top: 16px;
+      color: $textColorLight;
+
+      &__content {
+        display: flex;
+        gap: 12px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      &__price {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        font-size: 20px;
+      }
+      &__total {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 10px;
+        opacity: 70%;
+      }
+    }
+  }
+}
